@@ -20,7 +20,7 @@ Welcome to your study notes and interactive interview preparation guide for foun
 ### Concept Summary
 A Virtual Private Cloud acts as your own isolated network environment inside the AWS cloud, completely separating your cloud infrastructure from other customers and the public internet. When you set up a VPC, you define its private IP address range using a CIDR block, which grants you full control over subnets, route tables, and gateways to design your network layout securely.
 
-![VPC and Subnets Structure](images:vpc-subnets-overview.png)[cite: 1]
+![VPC and Subnets Structure](images/vpc-subnets-overview.png)[cite: 1]
 
 ### Mock Interview Questions
 1. *What is the primary function of an AWS VPC, and how does it provide network isolation?*
@@ -34,8 +34,8 @@ A Virtual Private Cloud acts as your own isolated network environment inside the
 ### Concept Summary
 VPCs operate at a regional level, meaning they span across multiple Availability Zones within a single AWS region but cannot stretch directly across different regions without peering. Availability Zones themselves are physically separate data centers equipped with independent power and networking, allowing applications to achieve high availability by distributing resources so that traffic automatically reroutes if one zone fails.
 
-![Multi-AZ VPC Architecture](images:multi-az-architecture.png)[cite: 2]  
-![VPC with Internet and NAT Gateways](images:vpc-gateways.png)[cite: 3]
+![Multi-AZ VPC Architecture](images/multi-az-architecture.png)[cite: 2]  
+![VPC with Internet and NAT Gateways](images/vpc-gateways.png)[cite: 3]
 
 ### Mock Interview Questions
 1. *Why is it beneficial for a company to deploy resources across multiple Availability Zones?*
@@ -49,7 +49,7 @@ VPCs operate at a regional level, meaning they span across multiple Availability
 ### Concept Summary
 Security Groups function as stateful, instance-level virtual firewalls that control inbound and outbound traffic for specific resources like EC2 instances. Because they are stateful, any incoming traffic you explicitly permit is automatically allowed to exit back out without needing extra rules, while their default stance blocks all incoming traffic and permits all outgoing traffic.
 
-![Security Groups vs NACLs Overview](images:security-groups-vs-nacls.png)[cite: 4]
+![Security Groups vs NACLs Overview](images/security-groups-vs-nacls.png)[cite: 4]
 
 ### Mock Interview Questions
 1. *What is the default behavior of an AWS Security Group regarding inbound and outbound traffic?*
@@ -63,7 +63,7 @@ Security Groups function as stateful, instance-level virtual firewalls that cont
 ### Concept Summary
 Network ACLs provide an additional, optional security layer that operates at the subnet level rather than the instance level, acting as a firewall for all traffic entering or leaving a specific subnet. Unlike security groups, NACLs are stateless, meaning you must manually define explicit rules for both incoming and outgoing traffic, and they evaluate rules sequentially based on numerical order rather than checking everything at once.
 
-![Network ACLs vs Security Groups Comparison](images:security-groups-vs-nacls.png)[cite: 4]
+![Network ACLs vs Security Groups Comparison](images/security-groups-vs-nacls.png)[cite: 4]
 
 ### Mock Interview Questions
 1. *What is the function of a Network ACL, and how does its stateless nature differ from a Security Group?*
