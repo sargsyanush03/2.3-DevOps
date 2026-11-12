@@ -541,7 +541,7 @@ ansible webservers -i inventory.ini -a "uptime" --limit web-server-2
 
 | Resource | Link |
 |---|---|
-| Lecture video | [YouTube](https://youtu.be/pGspZwt_Qmk?si=j5heXth0EIxYTdoD) |
+| Lecture video | [YouTube](https://www.youtube.com/watch?v=a1KiHKXa7pA&list=PLG8Vnz_p0gOU&index=3) |
 
 ---
 
